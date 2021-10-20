@@ -5,12 +5,12 @@
 	<groupId>br.ce.wcaquino.tasks</groupId>
 	<artifactId>fuctional-test</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-
-	<properties>
+	
+		<properties>
 		<maven.compiler.source>1.6</maven.compiler.source>
 		<maven.compiler.target>1.6</maven.compiler.target>
 	</properties>
-
+	
 
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/junit/junit -->
@@ -25,6 +25,12 @@
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
 			<version>3.141.59</version>
+		</dependency>
+		<dependency>
+			<groupId>org.codehaus.groovy</groupId>
+			<artifactId>groovy-all</artifactId>
+			<version>3.0.0-beta-1</version>
+			<type>pom</type>
 		</dependency>
 	</dependencies>
 </project>
