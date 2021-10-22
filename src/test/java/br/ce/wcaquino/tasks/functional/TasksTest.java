@@ -18,7 +18,7 @@ public class TasksTest {
 //		WebDriver driver = new ChromeDriver();
 		
 		DesiredCapabilities cap = DesiredCapabilities.chrome();
-		WebDriver driver = new RemoteWebDriver(new URL("http://192.168.0.12:4444/wd/hub"), cap);
+		WebDriver driver = new RemoteWebDriver(new URL("http://172.23.0.2:4444/wd/hub"), cap);
 		driver.navigate().to("http://192.168.0.12:8001/tasks/");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		return driver;
@@ -32,7 +32,7 @@ public class TasksTest {
 			// clicar em Add Todo
 			driver.findElement(By.id("addTodo")).click();
 
-			// escrever descrição
+			// escrever descriÃ§Ã£o
 			driver.findElement(By.id("task")).sendKeys("Teste via Selenium");
 
 			// escrever a data
@@ -79,7 +79,7 @@ public class TasksTest {
 			// clicar em Add Todo
 			driver.findElement(By.id("addTodo")).click();
 
-			// escrever descrição
+			// escrever descriÃ§Ã£o
 			driver.findElement(By.id("task")).sendKeys("Teste via Selenium");
 
 			// clicar em salvar
@@ -102,7 +102,7 @@ public class TasksTest {
 			// clicar em Add Todo
 			driver.findElement(By.id("addTodo")).click();
 
-			// escrever descrição
+			// escrever descriÃ§Ã£o
 			driver.findElement(By.id("task")).sendKeys("Teste via Selenium");
 
 			// escrever a data
